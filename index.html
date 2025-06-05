@@ -99,8 +99,12 @@
             color: var(--ciano-eletrico) !important;
         }
 
+        .btn:hover {
+            color: #fff;
+        }
+
         .hero-section {
-            min-height: 760px;
+            min-height: 600px;
             background: linear-gradient(135deg, rgba(31, 42, 68, 0.85), rgba(38, 70, 83, 0.85)), url('https://images.unsplash.com/photo-1511497580567-2c5d1b6d3b1f?fit=crop&w=1920&h=1080');
             background-size: cover;
             background-position: center;
@@ -286,7 +290,7 @@
         }
 
         .co2-simulator .form-select {
-            border-radius: 50px 0 0 50px;
+            /* border-radius: 50px 0 0 50px; */
             font-size: 1.1rem;
             padding: 0.75rem 1.5rem;
             background: rgba(31, 42, 68, 0.95);
@@ -300,13 +304,14 @@
         }
 
         .co2-simulator .btn {
-            border-radius: 0 50px 50px 0;
+            /* border-radius: 0 50px 50px 0; */
+            border: solid 1px rgba(31, 42, 68, 0.95);
             font-weight: 600;
             transition: all 0.3s ease;
         }
 
         .co2-simulator .btn:hover {
-            transform: scale(1.05);
+            transform: none;
         }
 
         #co2Result {
@@ -503,11 +508,10 @@
     <section id="produtos" class="product-section">
         <div class="container">
             <h2 class="text-center mb-5">Nossa Coleção Eco-Amigável</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fit=crop&w=400&h=300"
-                            class="card-img-top" alt="Mouse EcoTech">
+            <div class="row d-flex flex-wrap align-items-stretch justify-content-center">
+                <div class="col-lg-6 col-md-6 mb-4" style="max-width: 456px;">
+                    <div class="card product-card h-100">
+                        <img src="assets/mouse.jpg" class="card-img-top" alt="Mouse EcoTech">
                         <div class="card-body">
                             <h5>Mouse EcoTech</h5>
                             <p>Feito de plástico reciclado oceânico com botões modulares para reparos fáceis.</p>
@@ -515,10 +519,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1593642532454-17e6e6c4a0b9?fit=crop&w=400&h=300"
-                            class="card-img-top" alt="Teclado EcoTech">
+                <div class="col-lg-6 col-md-6 mb-4" style="max-width: 456px;">
+                    <div class="card product-card h-100">
+                        <img src="assets/teclado.jpg" class="card-img-top" alt="Teclado EcoTech">
                         <div class="card-body">
                             <h5>Teclado EcoTech</h5>
                             <p>Material biodegradável com teclas substituíveis para maior durabilidade.</p>
@@ -526,13 +529,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?fit=crop&w=400&h=300"
-                            class="card-img-top" alt="Webcam EcoTech">
+                <div class="col-lg-6 col-md-6 mb-4" style="max-width: 456px;">
+                    <div class="card product-card h-100">
+                        <img src="assets/webcam.jpg" class="card-img-top" alt="Webcam EcoTech">
                         <div class="card-body">
                             <h5>Webcam EcoTech</h5>
                             <p>Design neutro em carbono com componentes recicláveis.</p>
+                            <a href="#" class="cta-btn btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4" style="max-width: 456px;">
+                    <div class="card product-card h-100">
+                        <img src="assets/microfone.jpg" class="card-img-top" alt="Microfone EcoTech">
+                        <div class="card-body">
+                            <h5>Microfone EcoTech</h5>
+                            <p>Construído com materiais reciclados e cápsula modular, oferecendo qualidade de áudio
+                                sustentável e fácil manutenção.</p>
                             <a href="#" class="cta-btn btn">Saiba Mais</a>
                         </div>
                     </div>

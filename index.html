@@ -568,6 +568,7 @@
                             <option value="mouse">Mouse EcoTech</option>
                             <option value="teclado">Teclado EcoTech</option>
                             <option value="webcam">Webcam EcoTech</option>
+                            <option value="microfone">Microfone EcoTech</option>
                         </select>
                         <button class="cta-btn btn" onclick="calculateCO2()">Calcular</button>
                     </div>
@@ -645,6 +646,9 @@
                     break;
                 case 'webcam':
                     savings = 3.2;
+                    break;
+                case 'microfone':
+                    savings = 3.7;
                     break;
                 default:
                     savings = 0;
